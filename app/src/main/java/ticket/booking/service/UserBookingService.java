@@ -12,10 +12,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
-import java.util.UUID;
+import java.util.*;
 
 public class UserBookingService{
     
@@ -73,7 +70,6 @@ public class UserBookingService{
 
     public Boolean cancelBooking(String ticketId){
         // todo: Complete this function
-         public Boolean cancelBooking(String ticketId){
     
         Scanner s = new Scanner(System.in);
         System.out.println("Enter the ticket id to cancel");
