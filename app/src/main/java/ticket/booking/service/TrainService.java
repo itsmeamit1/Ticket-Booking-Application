@@ -19,7 +19,7 @@ public class TrainService {
     private static final String TRAIN_DB_PATH = "../localDB/trains.json";
 
     public TrainService() throws IOException {
-        File trains = new File(TRAIN_DB_PATH);
+        File trains = new File(TRAIN_DB_PATH) ;
         trainList = objectMapper.readValue(trains, new TypeReference<List<Train>>() {});
     }
 

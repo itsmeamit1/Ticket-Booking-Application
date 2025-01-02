@@ -37,7 +37,7 @@ public class UserBookingService{
     }
 
     private void loadUserListFromFile() throws IOException {
-        userList = objectMapper.readValue(new File(USER_FILE_PATH), new TypeReference<List<User>>() {});
+        userList = objectMapper.readValue(new File(USER_FILE_PATH), new TypeReference<List<User>>() {}) ;
     }
 
     public Boolean loginUser(){
